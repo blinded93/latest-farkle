@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  score: 1
+  scores_per_turn: MyText
+  user: one
+  game: one
+  name: MyString
+  color: MyString
+
+two:
+  score: 1
+  scores_per_turn: MyText
+  user: two
+  game: two
+  name: MyString
+  color: MyString
