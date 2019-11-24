@@ -2,6 +2,7 @@ class AuthenticationController < ApplicationController
 	before_action :authenticate_request!, only: [:verify_user]
 
   def verify_user
+    Rails.logger.info(current_user)
     render json: payload(current_user)
   end
   
