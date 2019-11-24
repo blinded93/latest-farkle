@@ -1,0 +1,157 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.icon-150 {
+  font-size: 150%;
+}
+
+.pointer {
+  cursor: pointer !important;
+}
+
+.container {
+  margin-top: 75px;
+}
+
+@media screen and (max-width: 576px) {
+  .sm-game-left {
+    margin-left: 10px;
+  }
+  
+  .sm-game-right {
+    margin-right: 10px;
+  }
+}
+
+.card-header {
+  padding: 0.25rem 1rem !important;
+}
+
+table .scores {
+  height: 33.6px;
+}
+
+.dice {
+  font-size: 600%;
+  -webkit-animation-name: dice-off;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-name: dice-on;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.dice:hover {
+  animation-name: dice-hover;
+  animation-duration: 0.25s;
+}
+
+@keyframes dice-hover {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+
+}
+
+@-webkit-keyframes dice-off {
+  0%   {
+    filter: opacity(1);
+  }
+  100% {
+    filter: opacity(0.5);
+  }
+}
+
+@keyframes dice-off {
+  0%   {
+    filter: opacity(1);
+  }
+  100% {
+    filter: opacity(0.5);
+  }
+}
+
+@-webkit-keyframes dice-on {
+  0%   {filter: opacity(0.5);}
+  100% {filter: opacity(1);}
+}
+
+@keyframes dice-on {
+  0%   {filter: opacity(0.5);}
+  100% {filter: opacity(1);}
+}
+
+.nav-pills > a.active {
+  color:  #009CB3 !important;
+  background-color: #fff !important;
+  border: 1px solid #009CB3;
+}
+
+.nav-pills > a {
+  color: darkslategrey !important;
+  cursor: auto;
+}
+
+.modal-header {
+  padding: 5px 10px !important;
+}
+
+.rules-dice {
+  font-size: 150%;
+}
+
+
+
+
+
+/* hover.css */
+
+.hvr-grow-rotate {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow-rotate:hover, .hvr-grow-rotate:focus, .hvr-grow-rotate:active {
+  -webkit-transform: scale(1.1) rotate(4deg);
+  transform: scale(1.1) rotate(4deg);
+}
