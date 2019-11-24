@@ -1,0 +1,28 @@
+{
+  "name": "farkle",
+  "version": "1.0.0",
+    "engines": {
+      "node": "12.13.0"
+    },
+  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "build": "cd client && npm install && npm update && npm run build && cd ..",
+    "deploy": "cp -a client/build/. public/",
+    "postinstall": "npm run build && npm run deploy && echo 'Client built!'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blinded93/farkle.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blinded93/farkle/issues"
+  },
+  "homepage": "https://github.com/blinded93/farkle#readme"
+}
